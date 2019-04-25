@@ -3,7 +3,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/r
 
 const FirstPage = ({ history }) => {
   const navigate = () => {
-    history.push('/page/second')
+    history.push('/second')
   }
 
   return (

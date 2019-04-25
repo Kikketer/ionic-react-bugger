@@ -13,8 +13,8 @@ const App = () => {
       <IonApp className="App">
         <IonPage>
           <IonRouterOutlet>
-            <Route path="/page" component={FirstPage} exact={true} />
-            <Route path="/page/second" component={SecondPage} exact={true} />
+            <Route path="/" component={FirstPage} exact={true} />
+            <Route path="/second" component={SecondPage} exact={true} />
           </IonRouterOutlet>
         </IonPage>
       </IonApp>

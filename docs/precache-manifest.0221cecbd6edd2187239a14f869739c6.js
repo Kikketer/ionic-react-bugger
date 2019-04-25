@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85bc91b97d92ba0b5066627d397546f3",
+    "revision": "828b5d073605e353e008223863d1253e",
     "url": "/ionic-react-bugger/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-bugger/static/css/11.fcb9622a.chunk.css"
   },
   {
-    "revision": "91544b5d221ce13a4299",
+    "revision": "8368441ab65b37b6c4a9",
     "url": "/ionic-react-bugger/static/css/main.795991f2.chunk.css"
   },
   {
@@ -704,8 +704,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ionic-react-bugger/static/js/99.cf6fc33d.chunk.js"
   },
   {
-    "revision": "91544b5d221ce13a4299",
-    "url": "/ionic-react-bugger/static/js/main.cda8628e.chunk.js"
+    "revision": "8368441ab65b37b6c4a9",
+    "url": "/ionic-react-bugger/static/js/main.4fbad5c9.chunk.js"
   },
   {
     "revision": "772cd6b25571d1f865ac",
