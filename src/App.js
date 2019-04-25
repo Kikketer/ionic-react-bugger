@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { IonApp, IonPage, IonLabel, IonRouterOutlet } from '@ionic/react'
+import '@ionic/core/css/core.css'
+import '@ionic/core/css/ionic.bundle.css'
 
-function App() {
+import FirstPage from './FirstPage'
+import SecondPage from './SecondPage'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <IonApp className="App">
+        <IonPage>
+          <IonRouterOutlet>
+            <Route path="/page" component={FirstPage} exact={true} />
+            <Route path="/page/second" component={SecondPage} exact={true} />
+          </IonRouterOutlet>
+        </IonPage>
+      </IonApp>
+    </Router>
+  )
 }
 
-export default App;
+export default App
