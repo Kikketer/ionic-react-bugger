@@ -1,21 +1,17 @@
 import React from 'react'
 import { IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonContent } from '@ionic/react'
-import styled from 'styled-components'
-
-const StyledToolbar = styled(IonToolbar)`
-  --background: rebeccapurple;
-`
+import './SecondPage.css'
 
 const SecondPage = ({ goBack }) => {
   return (
     <>
       <IonHeader>
-        <StyledToolbar>
+        <IonToolbar className="my-custom-header">
           <IonButtons slot="start">
             <IonBackButton goBack={goBack} defaultHref={`/page`} />
           </IonButtons>
           <IonTitle>Second Page</IonTitle>
-        </StyledToolbar>
+        </IonToolbar>
       </IonHeader>
 
       <IonContent padding>
