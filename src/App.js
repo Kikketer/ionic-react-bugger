@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { IonApp, IonPage, IonRouterOutlet } from '@ionic/react'
 import '@ionic/core/css/core.css'
 import '@ionic/core/css/ionic.bundle.css'

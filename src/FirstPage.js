@@ -1,5 +1,10 @@
 import React from 'react'
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/react'
+import styled from 'styled-components'
+
+const StyledToolbar = styled(IonToolbar)`
+  --background: orange;
+`
 
 const FirstPage = ({ history }) => {
   const navigate = () => {
@@ -9,9 +14,9 @@ const FirstPage = ({ history }) => {
   return (
     <>
       <IonHeader>
-        <IonToolbar>
+        <StyledToolbar>
           <IonTitle>First Page</IonTitle>
-        </IonToolbar>
+        </StyledToolbar>
       </IonHeader>
 
       <IonContent padding>

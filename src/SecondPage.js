@@ -1,33 +1,21 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonContent } from '@ionic/react'
+import styled from 'styled-components'
+
+const StyledToolbar = styled(IonToolbar)`
+  --background: rebeccapurple;
+`
 
 const SecondPage = ({ goBack }) => {
-  const instance = useRef({})
-
-  useEffect(() => {
-    // Do some sort of load on this page
-    console.log('Mounted ', instance.current)
-    if (!instance.current.id) {
-      instance.current.id = 'Abc'
-    }
-
-    // This second page isn't unmounted when back is pressed
-    // However the instance ref is cleared so it mounts again
-    return () => {
-      console.log('Unmounted')
-      delete instance.current.id
-    }
-  }, [])
-
   return (
     <>
       <IonHeader>
-        <IonToolbar>
+        <StyledToolbar>
           <IonButtons slot="start">
             <IonBackButton goBack={goBack} defaultHref={`/page`} />
           </IonButtons>
           <IonTitle>Second Page</IonTitle>
-        </IonToolbar>
+        </StyledToolbar>
       </IonHeader>
 
       <IonContent padding>
